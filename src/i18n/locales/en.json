@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "title": "Myassa Maallem — IT Engineer | AI & Full-Stack",
+    "description": "IT Engineer specialized in artificial intelligence, information systems and modern web development."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "badge": "Open to opportunities",
+    "name": "Myassa Maallem",
+    "role": "IT Engineer | AI & Full-Stack",
+    "intro": "IT Engineer passionate about artificial intelligence, information systems and building modern web solutions. I design reliable, intelligent solutions tailored to real business needs.",
+    "ctaProjects": "View my projects",
+    "ctaContact": "Contact me",
+    "ctaCv": "Download CV"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "About me",
+    "p1": "I'm Myassa Maallem, an IT Engineer with a strong interest in artificial intelligence, information systems and web application development.",
+    "p2": "I enjoy solving concrete technical problems, designing useful digital solutions, working with AI, building modern web applications, learning new technologies and improving existing systems.",
+    "interests": [
+      "Solving technical problems",
+      "Designing useful digital solutions",
+      "Working with artificial intelligence",
+      "Building modern web applications",
+      "Learning new technologies",
+      "Improving existing systems"
+    ],
+    "stats": [
+      { "label": "Master's in Information Technology" },
+      { "label": "AI & RAG Projects" },
+      { "label": "Full-Stack Projects" },
+      { "label": "Open to Opportunities" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Technical skills",
+    "subtitle": "A technical foundation organized around development, systems and artificial intelligence.",
+    "categories": {
+      "webDev": "Programming & Web",
+      "backend": "Backend & APIs",
+      "ai": "Artificial Intelligence",
+      "databases": "Databases",
+      "devops": "DevOps & Tools",
+      "other": "Other"
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Professional experience",
+    "subtitle": "The professional path that built my expertise.",
+    "items": [
+      {
+        "date": "April – June 2026",
+        "title": "Final-year internship — ENGTP (Sonatrach)",
+        "org": "ENGTP",
+        "description": "Design and development of the intelligent RAG-based chatbot."
+      },
+      {
+        "date": "July 2025",
+        "title": "Web Developer — ENGTP",
+        "org": "ENGTP",
+        "description": "Leave management application, in coordination with the HR department."
+      },
+      {
+        "date": "January – June 2024",
+        "title": "Web Developer — Banque Nationale de l'Habitat",
+        "org": "Banque Nationale de l'Habitat (BNH)",
+        "description": "IT asset optimization and management tool."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Featured projects",
+    "subtitle": "A selection of projects spanning applied artificial intelligence and full-stack development.",
+    "viewProject": "View project",
+    "github": "GitHub",
+    "liveDemo": "Live Demo",
+    "notAvailable": "Not available",
+    "highlight": "Highlight",
+    "items": {
+      "hrAssistant": {
+        "category": "Artificial Intelligence",
+        "title": "Intelligent HR Assistant — ENGTP / SONATRACH",
+        "description": "Intelligent conversational assistant dedicated to human resources, based on a RAG architecture that searches internal documents and generates contextualized answers with citations.",
+        "highlight": "Local AI architecture designed for confidential enterprise data.",
+        "overview": "A conversational assistant for ENGTP's (a Sonatrach subsidiary) HR department, allowing natural-language queries over the company's internal documentation.",
+        "problem": "HR teams had to manually search through numerous internal documents, which slowed down responses to common questions.",
+        "solution": "Built a RAG (Retrieval-Augmented Generation) architecture combining hybrid search and contextualized generation with source citations, fully deployed on-premise to guarantee data confidentiality.",
+        "features": [
+          "Hybrid dense/sparse search (BM25 + embeddings)",
+          "Answer generation with source citations",
+          "Multi-step orchestration via LangGraph",
+          "100% on-premise deployment"
+        ],
+        "challenges": "Guaranteeing full data confidentiality while maintaining satisfactory answer quality with locally-run models.",
+        "results": "A functional assistant able to answer common HR questions by relying on internal documentation, with no dependency on an external API."
+      },
+      "learnhub": {
+        "category": "Full-Stack",
+        "title": "LearnHub",
+        "description": "Modern web platform dedicated to online learning, giving users access to courses and educational content.",
+        "overview": "An e-learning platform enabling course creation, user enrollment, and management of educational content.",
+        "problem": "Needed a simple, well-structured platform to organize online courses with clear role management.",
+        "solution": "Developed a clean architecture with separated routers/services/data-access layers, JWT authentication and role management (student, instructor, administrator).",
+        "features": [
+          "JWT authentication with multiple roles",
+          "Course creation and management",
+          "Enrollment and course tracking",
+          "Database migrations via Alembic"
+        ],
+        "challenges": "Structuring a clear, scalable backend architecture from the start.",
+        "results": "A functional platform demonstrating a clean, maintainable full-stack architecture."
+      },
+      "aiAgentMcp": {
+        "category": "Artificial Intelligence",
+        "title": "Autonomous AI Agent — Function Calling",
+        "description": "An agent that dynamically selects the tools it needs — document search, CRUD operations, data queries — to fulfill a request, via the standard Model Context Protocol. Automatic tool generation from an OpenAPI spec, with granular permissions, dry-run mode, and full action logging.",
+        "overview": "An AI agent able to dynamically choose and execute the right tools to fulfill a user request, via the Model Context Protocol (MCP).",
+        "problem": "A useful AI assistant needs to be able to act on a real system (search, CRUD, queries), not just generate text.",
+        "solution": "Implemented an agent orchestrated with LangGraph, exposing its capabilities via MCP, with automatic tool generation from an OpenAPI spec and a granular permission system.",
+        "features": [
+          "Dynamic tool selection via MCP",
+          "Automatic tool generation from OpenAPI",
+          "Granular permissions and dry-run mode",
+          "Full action logging"
+        ],
+        "challenges": "Guaranteeing strict control over the agent's actions while preserving real decision-making autonomy.",
+        "results": "A functional agent able to execute concrete tasks on a backend in a secure and traceable way."
+      },
+      "aiSqlAssistant": {
+        "category": "Artificial Intelligence",
+        "title": "AI SQL Assistant",
+        "description": "A RAG pipeline built from scratch, indexing a PostgreSQL schema into pgvector to generate context-aware SQL queries. Defense-in-depth architecture: strict syntax validation limited to read-only statements, combined with a read-only database role.",
+        "overview": "An assistant that translates natural-language questions into secure SQL queries, grounded in the database's real schema.",
+        "problem": "Querying a database normally requires knowing SQL and the exact table schema.",
+        "solution": "Vector indexing of the PostgreSQL schema with pgvector, contextualized SQL query generation, then strict validation via SQLGlot limiting execution to read-only queries.",
+        "features": [
+          "Vector indexing of the database schema",
+          "Contextualized SQL query generation",
+          "Strict syntax validation (read-only)",
+          "Read-only database role"
+        ],
+        "challenges": "Guaranteeing that no generated query could modify or compromise data, via a double security layer.",
+        "results": "An assistant able to generate relevant, secure SQL queries from natural-language questions."
+      },
+      "ecommerce": {
+        "category": "Full-Stack",
+        "title": "E-commerce Platform",
+        "description": "Complete self-taught e-commerce application, including a product catalog, cart and order management.",
+        "overview": "A self-taught e-commerce platform built to master a complete online shopping flow.",
+        "problem": "Understanding and implementing every building block of a real e-commerce application.",
+        "solution": "Built a full application with product catalog, cart and order management, on a React/Node.js/MongoDB stack.",
+        "features": [
+          "Product catalog",
+          "Cart and order management",
+          "React user interface",
+          "REST API with Node.js / Express"
+        ],
+        "challenges": "Cleanly structuring the data flow between frontend and backend for a smooth shopping experience.",
+        "results": "A functional e-commerce application covering the end-to-end shopping journey."
+      },
+      "socialMedia": {
+        "category": "Full-Stack",
+        "title": "Social Network",
+        "description": "Complete self-taught social network with posts, interactions and user profiles.",
+        "overview": "A self-taught social network platform with posts, interactions and user profiles.",
+        "problem": "Understanding and implementing the core mechanics of a social network (posts, interactions, user relationships).",
+        "solution": "Built a full application with profile, post and interaction management, on a React/Node.js/MongoDB stack.",
+        "features": [
+          "User profiles",
+          "Posts and interactions",
+          "React user interface",
+          "REST API with Node.js / Express"
+        ],
+        "challenges": "Correctly modeling user relationships and the activity feed.",
+        "results": "A functional social network application with the core interactions in place."
+      },
+      "projectManagement": {
+        "category": "Full-Stack",
+        "title": "Project Management Tool",
+        "description": "Self-taught collaborative project management tool with real-time task tracking.",
+        "overview": "A collaborative tool for managing projects and tracking task progress in real time.",
+        "problem": "Coordinating team work effectively requires clear, up-to-date visibility into task progress.",
+        "solution": "Built a project management tool with real-time updates via Socket.io, on a React/Node.js/MongoDB stack.",
+        "features": [
+          "Task and project management",
+          "Real-time updates",
+          "Collaborative interface",
+          "REST API with Node.js / Express"
+        ],
+        "challenges": "Synchronizing task state in real time across multiple simultaneous users.",
+        "results": "A functional project management tool with real-time collaborative tracking."
+      },
+      "realtimeCommunication": {
+        "category": "Full-Stack",
+        "title": "Real-Time Communication App",
+        "description": "Real-time communication application with multi-user video calls, screen sharing, and data encryption.",
+        "overview": "An application enabling multi-user video calls, screen sharing, and real-time messaging.",
+        "problem": "Setting up reliable real-time video and text communication between multiple users.",
+        "solution": "Implemented real-time communication with Socket.io and WebRTC, including encryption of exchanged data.",
+        "features": [
+          "Multi-user video calls",
+          "Screen sharing",
+          "Real-time messaging",
+          "Data encryption"
+        ],
+        "challenges": "Managing the complexity of WebRTC for reliable video calls between multiple participants.",
+        "results": "A functional real-time communication app with video, screen sharing and messaging."
+      },
+      "leaveManagement": {
+        "category": "Full-Stack",
+        "title": "Leave Management System",
+        "description": "Application for managing and approving leave requests, built for ENGTP's HR department during my web developer role.",
+        "overview": "An internal application letting employees submit leave requests and HR approve them.",
+        "problem": "ENGTP's HR department needed a dedicated tool to manage leave requests in a structured way.",
+        "solution": "Built a JEE application enabling submission, tracking, and approval of leave requests.",
+        "features": [
+          "Leave request submission",
+          "Request status tracking",
+          "HR approval workflow"
+        ],
+        "challenges": "Adapting the application to HR's existing internal processes.",
+        "results": "A functional internal tool used for leave management within the HR department."
+      },
+      "itAssetManagement": {
+        "category": "Full-Stack",
+        "title": "IT Asset Management",
+        "description": "A tool for optimizing and tracking IT equipment, built for Banque Nationale de l'Habitat.",
+        "overview": "An internal tool to track and optimize the bank's IT equipment management.",
+        "problem": "The bank needed clear tracking of its IT equipment to optimize its use.",
+        "solution": "Built a PHP application enabling tracking and management of IT equipment.",
+        "features": [
+          "IT equipment tracking",
+          "Assignment management",
+          "Equipment usage optimization"
+        ],
+        "challenges": "Structuring reliable equipment tracking within the constraints of the existing system.",
+        "results": "A functional internal tool used for IT asset management."
+      }
+    },
+    "detail": {
+      "overview": "Overview",
+      "problem": "Problem",
+      "solution": "Solution",
+      "architecture": "Architecture",
+      "technologies": "Technologies",
+      "features": "Main features",
+      "challenges": "Challenges",
+      "results": "Results",
+      "close": "Close"
+    },
+    "architectureDiagram": [
+      "Documents",
+      "Text Extraction",
+      "Chunking",
+      "Embeddings",
+      "Vector Database",
+      "Retrieval",
+      "Reranking",
+      "LLM",
+      "Answer + Citations"
+    ]
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Academic background",
+    "subtitle": "The academic path that built my technical foundations.",
+    "degree": "Master's — Information Technology",
+    "school": "Université M'Hamed Bougara de Boumerdès",
+    "date": "2024 – 2026",
+    "areasTitle": "Academic areas",
+    "areas": [
+      "Artificial Intelligence",
+      "Information Systems",
+      "Web Development",
+      "Databases",
+      "Computer Networks",
+      "Software Engineering"
+    ],
+    "bachelor": {
+      "degree": "Bachelor's — Information Systems & Software Engineering",
+      "school": "Université M'Hamed Bougara de Boumerdès",
+      "date": "2021 – 2024"
+    }
+  },
+  "certifications": {
+    "eyebrow": "Certifications",
+    "title": "Certifications",
+    "subtitle": "Certifications earned throughout my journey.",
+    "viewCredential": "View credential",
+    "notAvailable": "Link not available",
+    "empty": "Section being updated — certifications coming soon.",
+    "items": {
+      "devupFullstack": {
+        "title": "Full-Stack Development Certificate",
+        "organization": "DevUp Scientific Club, UMBB"
+      },
+      "gdscUiux": {
+        "title": "UI/UX Design Certificate",
+        "organization": "Google Developer Student Clubs (GDSC), UMBB"
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "What I can bring",
+    "subtitle": "Technical support spanning AI, web development and information systems.",
+    "items": [
+      { "title": "AI Solutions", "description": "Building solutions based on LLMs, RAG and NLP." },
+      { "title": "Full-Stack Development", "description": "Building modern, responsive web applications." },
+      { "title": "Information Systems", "description": "Designing and improving IT solutions tailored to organizations' needs." },
+      { "title": "Technical Support", "description": "Diagnosing, troubleshooting and providing technical assistance." },
+      { "title": "Automation", "description": "Automating tasks and integrating APIs." },
+      { "title": "Documentation", "description": "Clear, professional technical documentation." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why work with me",
+    "title": "Why work with me",
+    "items": [
+      { "title": "Problem Solving", "description": "A methodical approach to analyzing and solving concrete technical problems." },
+      { "title": "Continuous Learning", "description": "Constant technical watch to stay current with today's tools and practices." },
+      { "title": "Technical Curiosity", "description": "A genuine interest in understanding how systems work in depth." },
+      { "title": "Clear Communication", "description": "The ability to explain technical concepts simply and clearly." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something useful together.",
+    "subtitle": "Open to opportunities in full-stack development and applied artificial intelligence.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "location": "Location",
+    "locationValue": "Algeria"
+  },
+  "footer": {
+    "role": "IT Engineer | AI & Full-Stack",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "common": {
+    "placeholderLink": "Link coming soon"
+  }
+}

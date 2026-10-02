@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "title": "Myassa Maallem — Ingénieure en Informatique | AI & Full-Stack",
+    "description": "Ingénieure en Informatique spécialisée en intelligence artificielle, systèmes d'information et développement web moderne."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "education": "Formation",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "downloadCv": "Télécharger le CV"
+  },
+  "hero": {
+    "badge": "Ouverte aux opportunités",
+    "name": "Myassa Maallem",
+    "role": "Ingénieure en Informatique | AI & Full-Stack",
+    "intro": "Ingénieure en Informatique passionnée par l'intelligence artificielle, les systèmes d'information et le développement de solutions web modernes. Je conçois des solutions fiables, intelligentes et adaptées aux besoins réels des entreprises.",
+    "ctaProjects": "Voir mes projets",
+    "ctaContact": "Me contacter",
+    "ctaCv": "Télécharger le CV"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "À propos de moi",
+    "p1": "Je suis Myassa Maallem, Ingénieure en Informatique avec un intérêt particulier pour l'intelligence artificielle, les systèmes d'information et le développement d'applications web.",
+    "p2": "J'aime résoudre des problèmes techniques concrets, concevoir des solutions numériques utiles, travailler avec l'IA, construire des applications web modernes, apprendre de nouvelles technologies et améliorer les systèmes existants.",
+    "interests": [
+      "Résoudre des problèmes techniques",
+      "Concevoir des solutions numériques utiles",
+      "Travailler avec l'intelligence artificielle",
+      "Construire des applications web modernes",
+      "Apprendre de nouvelles technologies",
+      "Améliorer les systèmes existants"
+    ],
+    "stats": [
+      { "label": "Master en Technologie de l'Information" },
+      { "label": "AI & RAG Projects" },
+      { "label": "Full-Stack Projects" },
+      { "label": "Ouverte aux opportunités" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Compétences",
+    "title": "Compétences techniques",
+    "subtitle": "Une base technique organisée autour du développement, des systèmes et de l'intelligence artificielle.",
+    "categories": {
+      "webDev": "Programmation & Web",
+      "backend": "Backend & APIs",
+      "ai": "Intelligence Artificielle",
+      "databases": "Bases de données",
+      "devops": "DevOps & Outils",
+      "other": "Autre"
+    }
+  },
+  "experience": {
+    "eyebrow": "Expérience",
+    "title": "Expérience professionnelle",
+    "subtitle": "Le parcours professionnel qui a construit mon expertise.",
+    "items": [
+      {
+        "date": "Avril – Juin 2026",
+        "title": "Stage de fin d'études — ENGTP (Sonatrach)",
+        "org": "ENGTP",
+        "description": "Conception et développement du chatbot intelligent basé sur une architecture RAG."
+      },
+      {
+        "date": "Juillet 2025",
+        "title": "Développeuse Web — ENGTP",
+        "org": "ENGTP",
+        "description": "Application de gestion des congés, en coordination avec le service des ressources humaines."
+      },
+      {
+        "date": "Janvier – Juin 2024",
+        "title": "Développeuse Web — Banque Nationale de l'Habitat",
+        "org": "Banque Nationale de l'Habitat (BNH)",
+        "description": "Outil d'optimisation et de gestion du parc informatique."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projets",
+    "title": "Projets phares",
+    "subtitle": "Une sélection de projets couvrant l'intelligence artificielle appliquée et le développement full-stack.",
+    "viewProject": "Voir le projet",
+    "github": "GitHub",
+    "liveDemo": "Démo live",
+    "notAvailable": "Non disponible",
+    "highlight": "Point fort",
+    "items": {
+      "hrAssistant": {
+        "category": "Intelligence Artificielle",
+        "title": "Assistant RH Intelligent — ENGTP / SONATRACH",
+        "description": "Assistant conversationnel intelligent dédié aux ressources humaines, basé sur une architecture RAG permettant de rechercher des informations dans des documents internes et de générer des réponses contextualisées avec citations.",
+        "highlight": "Architecture IA locale conçue pour la confidentialité des données de l'entreprise.",
+        "overview": "Un assistant conversationnel destiné au service RH d'ENGTP, filiale de Sonatrach, permettant d'interroger en langage naturel la documentation interne de l'entreprise.",
+        "problem": "Les équipes RH devaient chercher manuellement l'information dans de nombreux documents internes, ce qui ralentissait les réponses aux questions courantes.",
+        "solution": "Mise en place d'une architecture RAG (Retrieval-Augmented Generation) combinant recherche hybride et génération contextualisée avec citations des sources, déployée entièrement en local pour garantir la confidentialité des données.",
+        "features": [
+          "Recherche hybride dense/sparse (BM25 + embeddings)",
+          "Génération de réponses avec citations des sources",
+          "Orchestration multi-étapes via LangGraph",
+          "Déploiement 100% on-premise"
+        ],
+        "challenges": "Garantir la confidentialité totale des données de l'entreprise tout en maintenant une qualité de réponse satisfaisante avec des modèles exécutés localement.",
+        "results": "Un assistant fonctionnel capable de répondre aux questions RH courantes en s'appuyant sur la documentation interne, sans dépendance à une API externe."
+      },
+      "learnhub": {
+        "category": "Full-Stack",
+        "title": "LearnHub",
+        "description": "Plateforme web moderne dédiée à l'apprentissage en ligne permettant aux utilisateurs d'accéder à des formations et contenus éducatifs.",
+        "overview": "Une plateforme e-learning permettant la création de cours, l'inscription des utilisateurs et la gestion des contenus pédagogiques.",
+        "problem": "Besoin d'une plateforme simple et structurée pour organiser des formations en ligne avec une gestion claire des rôles.",
+        "solution": "Développement d'une architecture propre avec séparation routers/services/accès aux données, authentification par JWT et gestion des rôles (étudiant, formateur, administrateur).",
+        "features": [
+          "Authentification JWT avec rôles multiples",
+          "Création et gestion de cours",
+          "Inscription et suivi des formations",
+          "Migrations de base de données via Alembic"
+        ],
+        "challenges": "Structurer une architecture backend claire et évolutive dès le départ.",
+        "results": "Une plateforme fonctionnelle démontrant une architecture full-stack propre et maintenable."
+      },
+      "aiAgentMcp": {
+        "category": "Intelligence Artificielle",
+        "title": "Agent IA autonome — function calling",
+        "description": "Un agent qui sélectionne dynamiquement les outils dont il a besoin — recherche documentaire, opérations CRUD, requêtes de données — pour répondre à une demande, via le protocole standard Model Context Protocol. Génération automatique d'outils à partir d'une spécification OpenAPI, avec permissions granulaires, mode simulation (dry-run) et journalisation complète des actions.",
+        "overview": "Un agent IA capable de choisir et d'exécuter dynamiquement les bons outils pour répondre à une requête utilisateur, via le Model Context Protocol (MCP).",
+        "problem": "Un assistant IA utile doit pouvoir agir sur un système réel (recherche, CRUD, requêtes) et non se limiter à générer du texte.",
+        "solution": "Implémentation d'un agent orchestré avec LangGraph, exposant ses capacités via MCP, avec génération automatique des outils depuis une spécification OpenAPI et un système de permissions granulaires.",
+        "features": [
+          "Sélection dynamique des outils via MCP",
+          "Génération automatique d'outils depuis OpenAPI",
+          "Permissions granulaires et mode dry-run",
+          "Journalisation complète des actions"
+        ],
+        "challenges": "Garantir un contrôle strict des actions de l'agent tout en conservant une réelle autonomie de décision.",
+        "results": "Un agent fonctionnel capable d'exécuter des tâches concrètes sur un backend de façon sécurisée et traçable."
+      },
+      "aiSqlAssistant": {
+        "category": "Intelligence Artificielle",
+        "title": "AI SQL Assistant",
+        "description": "Un pipeline RAG construit de zéro, indexant un schéma PostgreSQL dans pgvector pour générer des requêtes SQL contextualisées. Architecture en défense en profondeur : validation stricte de la syntaxe limitée aux instructions en lecture seule, combinée à un rôle de base de données en lecture seule.",
+        "overview": "Un assistant qui traduit des questions en langage naturel en requêtes SQL sécurisées, en s'appuyant sur le schéma réel de la base de données.",
+        "problem": "Interroger une base de données nécessite normalement de connaître le SQL et le schéma exact des tables.",
+        "solution": "Indexation vectorielle du schéma PostgreSQL avec pgvector, génération de requêtes SQL contextualisées, puis validation stricte via SQLGlot limitant l'exécution aux requêtes en lecture seule.",
+        "features": [
+          "Indexation vectorielle du schéma de base de données",
+          "Génération de requêtes SQL contextualisées",
+          "Validation syntaxique stricte (lecture seule)",
+          "Rôle de base de données en lecture seule"
+        ],
+        "challenges": "Garantir qu'aucune requête générée ne puisse modifier ou compromettre les données, via une double couche de sécurité.",
+        "results": "Un assistant capable de générer des requêtes SQL pertinentes et sécurisées à partir de questions en langage naturel."
+      },
+      "ecommerce": {
+        "category": "Full-Stack",
+        "title": "Plateforme e-commerce",
+        "description": "Application e-commerce complète en auto-formation, incluant catalogue produits, panier et gestion des commandes.",
+        "overview": "Une plateforme e-commerce développée en autodidacte pour maîtriser un flux complet d'achat en ligne.",
+        "problem": "Comprendre et implémenter l'ensemble des briques d'une application e-commerce réelle.",
+        "solution": "Développement d'une application complète avec gestion du catalogue, panier et commandes, sur une stack React/Node.js/MongoDB.",
+        "features": [
+          "Catalogue produits",
+          "Panier et gestion des commandes",
+          "Interface utilisateur React",
+          "API REST avec Node.js / Express"
+        ],
+        "challenges": "Structurer proprement le flux de données entre le frontend et le backend pour une expérience d'achat fluide.",
+        "results": "Une application e-commerce fonctionnelle couvrant le parcours d'achat de bout en bout."
+      },
+      "socialMedia": {
+        "category": "Full-Stack",
+        "title": "Réseau social",
+        "description": "Réseau social complet en auto-formation, avec publications, interactions et profils utilisateurs.",
+        "overview": "Une plateforme de réseau social développée en autodidacte, avec publications, interactions et profils utilisateurs.",
+        "problem": "Comprendre et implémenter les mécanismes fondamentaux d'un réseau social (publications, interactions, relations entre utilisateurs).",
+        "solution": "Développement d'une application complète avec gestion des profils, publications et interactions, sur une stack React/Node.js/MongoDB.",
+        "features": [
+          "Profils utilisateurs",
+          "Publications et interactions",
+          "Interface utilisateur React",
+          "API REST avec Node.js / Express"
+        ],
+        "challenges": "Modéliser correctement les relations entre utilisateurs et le flux d'activité.",
+        "results": "Une application de réseau social fonctionnelle avec les interactions essentielles."
+      },
+      "projectManagement": {
+        "category": "Full-Stack",
+        "title": "Outil de gestion de projet",
+        "description": "Outil collaboratif de gestion de projet en auto-formation, avec suivi des tâches en temps réel.",
+        "overview": "Un outil collaboratif permettant de gérer des projets et de suivre l'avancement des tâches en temps réel.",
+        "problem": "Coordonner efficacement le travail d'équipe nécessite une visibilité claire et à jour sur l'avancement des tâches.",
+        "solution": "Développement d'un outil de gestion de projet avec mises à jour en temps réel via Socket.io, sur une stack React/Node.js/MongoDB.",
+        "features": [
+          "Gestion des tâches et des projets",
+          "Mises à jour en temps réel",
+          "Interface collaborative",
+          "API REST avec Node.js / Express"
+        ],
+        "challenges": "Synchroniser l'état des tâches en temps réel entre plusieurs utilisateurs simultanés.",
+        "results": "Un outil de gestion de projet fonctionnel avec suivi collaboratif en temps réel."
+      },
+      "realtimeCommunication": {
+        "category": "Full-Stack",
+        "title": "Application de communication en temps réel",
+        "description": "Application de communication en temps réel avec appels vidéo multi-utilisateurs, partage d'écran et chiffrement des données.",
+        "overview": "Une application permettant des appels vidéo multi-utilisateurs, du partage d'écran et une messagerie en temps réel.",
+        "problem": "Mettre en place une communication vidéo et texte fiable en temps réel entre plusieurs utilisateurs.",
+        "solution": "Implémentation de la communication en temps réel avec Socket.io et WebRTC, incluant le chiffrement des données échangées.",
+        "features": [
+          "Appels vidéo multi-utilisateurs",
+          "Partage d'écran",
+          "Messagerie en temps réel",
+          "Chiffrement des données"
+        ],
+        "challenges": "Gérer la complexité de WebRTC pour des appels vidéo fiables entre plusieurs participants.",
+        "results": "Une application de communication en temps réel fonctionnelle avec vidéo, partage d'écran et messagerie."
+      },
+      "leaveManagement": {
+        "category": "Full-Stack",
+        "title": "Système de gestion des congés",
+        "description": "Application de gestion et d'approbation des demandes de congés, développée pour le service RH d'ENGTP durant mon rôle de développeuse web.",
+        "overview": "Une application interne permettant aux employés de soumettre des demandes de congés et aux RH de les approuver.",
+        "problem": "Le service RH d'ENGTP avait besoin d'un outil dédié pour gérer les demandes de congés de manière structurée.",
+        "solution": "Développement d'une application JEE permettant la soumission, le suivi et l'approbation des demandes de congés.",
+        "features": [
+          "Soumission des demandes de congés",
+          "Suivi du statut des demandes",
+          "Approbation par les RH"
+        ],
+        "challenges": "Adapter l'application aux processus internes existants du service RH.",
+        "results": "Un outil interne fonctionnel utilisé pour la gestion des congés au sein du service RH."
+      },
+      "itAssetManagement": {
+        "category": "Full-Stack",
+        "title": "Gestion du parc informatique",
+        "description": "Outil d'optimisation et de suivi du matériel informatique, développé pour la Banque Nationale de l'Habitat.",
+        "overview": "Un outil interne pour suivre et optimiser la gestion du parc informatique de la banque.",
+        "problem": "La banque avait besoin d'un suivi clair de son matériel informatique pour optimiser son utilisation.",
+        "solution": "Développement d'une application PHP permettant le suivi et la gestion du parc informatique.",
+        "features": [
+          "Suivi du matériel informatique",
+          "Gestion des affectations",
+          "Optimisation de l'utilisation du parc"
+        ],
+        "challenges": "Structurer un suivi fiable du matériel avec les contraintes du système existant.",
+        "results": "Un outil interne fonctionnel utilisé pour la gestion du parc informatique."
+      }
+    },
+    "detail": {
+      "overview": "Aperçu",
+      "problem": "Problème",
+      "solution": "Solution",
+      "architecture": "Architecture",
+      "technologies": "Technologies",
+      "features": "Fonctionnalités principales",
+      "challenges": "Défis",
+      "results": "Résultats",
+      "close": "Fermer"
+    },
+    "architectureDiagram": [
+      "Documents",
+      "Extraction de texte",
+      "Découpage (Chunking)",
+      "Embeddings",
+      "Base de données vectorielle",
+      "Recherche (Retrieval)",
+      "Reranking",
+      "LLM",
+      "Réponse + Citations"
+    ]
+  },
+  "education": {
+    "eyebrow": "Formation",
+    "title": "Formation académique",
+    "subtitle": "Le parcours académique qui a construit mes fondations techniques.",
+    "degree": "Master — Technologie de l'Information",
+    "school": "Université M'Hamed Bougara de Boumerdès",
+    "date": "2024 – 2026",
+    "areasTitle": "Domaines académiques",
+    "areas": [
+      "Intelligence Artificielle",
+      "Systèmes d'Information",
+      "Développement Web",
+      "Bases de Données",
+      "Réseaux Informatiques",
+      "Génie Logiciel"
+    ],
+    "bachelor": {
+      "degree": "Licence — Systèmes d'Information et Génie Logiciel",
+      "school": "Université M'Hamed Bougara de Boumerdès",
+      "date": "2021 – 2024"
+    }
+  },
+  "certifications": {
+    "eyebrow": "Certifications",
+    "title": "Certifications",
+    "subtitle": "Certifications obtenues au cours de mon parcours.",
+    "viewCredential": "Voir le certificat",
+    "notAvailable": "Lien non disponible",
+    "empty": "Section en cours de mise à jour — certifications à venir.",
+    "items": {
+      "devupFullstack": {
+        "title": "Certificat de développement Full-Stack",
+        "organization": "Club Scientifique DevUp, UMBB"
+      },
+      "gdscUiux": {
+        "title": "Certificat de design UI/UX",
+        "organization": "Google Developer Student Clubs (GDSC), UMBB"
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Ce que je peux apporter",
+    "subtitle": "Un accompagnement technique couvrant l'IA, le développement web et les systèmes d'information.",
+    "items": [
+      { "title": "Solutions IA", "description": "Développement de solutions basées sur les LLM, RAG et NLP." },
+      { "title": "Développement Full-Stack", "description": "Création d'applications web modernes et responsives." },
+      { "title": "Systèmes d'Information", "description": "Conception et amélioration de solutions informatiques adaptées aux besoins des organisations." },
+      { "title": "Support Technique", "description": "Diagnostic, résolution de problèmes et assistance technique." },
+      { "title": "Automatisation", "description": "Automatisation de tâches et intégration d'APIs." },
+      { "title": "Documentation", "description": "Documentation technique claire et professionnelle." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Pourquoi travailler avec moi",
+    "title": "Pourquoi travailler avec moi",
+    "items": [
+      { "title": "Résolution de problèmes", "description": "Une approche méthodique pour analyser et résoudre des problèmes techniques concrets." },
+      { "title": "Apprentissage continu", "description": "Une veille technique constante pour rester à jour sur les outils et pratiques actuels." },
+      { "title": "Curiosité technique", "description": "Un intérêt sincère pour comprendre le fonctionnement des systèmes en profondeur." },
+      { "title": "Communication claire", "description": "Une capacité à expliquer des concepts techniques de façon simple et accessible." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Construisons quelque chose d'utile ensemble.",
+    "subtitle": "Ouverte aux opportunités en développement full-stack et en intelligence artificielle appliquée.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "location": "Localisation",
+    "locationValue": "Algérie"
+  },
+  "footer": {
+    "role": "Ingénieure en Informatique | AI & Full-Stack",
+    "rights": "Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  },
+  "common": {
+    "placeholderLink": "Lien à venir"
+  }
+}

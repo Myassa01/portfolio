@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg: #070B14;
+  --color-bg-elev: #0B1220;
+  --color-surface: #0F172A;
+  --color-ink: #EEF2F8;
+  --color-ink-muted: #93A0B8;
+  --color-ink-dim: #566178;
+  --color-accent: #4C8CFF;
+  --color-accent-soft: rgba(76,140,255,0.12);
+  --color-accent-strong: #6FA1FF;
+  --color-amber: #F2A65A;
+  --color-amber-soft: rgba(242,166,90,0.12);
+  --color-line: rgba(255,255,255,0.08);
+  --color-line-strong: rgba(255,255,255,0.16);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(.2,.7,.3,1) both;
+  --animate-pulse-dot: pulse-dot 2s infinite;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light body,
+.light {
+  color-scheme: light;
+}
+
+:root.light {
+  --color-bg: #F7F9FC;
+  --color-bg-elev: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-ink: #101828;
+  --color-ink-muted: #4B5768;
+  --color-ink-dim: #8B95A5;
+  --color-accent: #2563EB;
+  --color-accent-soft: rgba(37,99,235,0.08);
+  --color-accent-strong: #1D4ED8;
+  --color-amber: #C77B24;
+  --color-amber-soft: rgba(199,123,36,0.10);
+  --color-line: rgba(16,24,40,0.09);
+  --color-line-strong: rgba(16,24,40,0.16);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(76,140,255,0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(76,140,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(76,140,255,0); }
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+[dir="rtl"] .ltr-only {
+  direction: ltr;
+}

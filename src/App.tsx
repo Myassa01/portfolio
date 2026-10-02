@@ -1,0 +1,49 @@
+import { ThemeProvider } from '@/context/ThemeContext'
+import { useLanguageDirection } from '@/hooks/useLanguageDirection'
+import { useDocumentMeta } from '@/hooks/useDocumentMeta'
+import { Navbar } from '@/components/sections/Navbar'
+import { Hero } from '@/components/sections/Hero'
+import { About } from '@/components/sections/About'
+import { Skills } from '@/components/sections/Skills'
+import { Experience } from '@/components/sections/Experience'
+import { Projects } from '@/components/sections/Projects'
+import { Education } from '@/components/sections/Education'
+import { Certifications } from '@/components/sections/Certifications'
+import { Services } from '@/components/sections/Services'
+import { WhyWorkWithMe } from '@/components/sections/WhyWorkWithMe'
+import { Contact } from '@/components/sections/Contact'
+import { Footer } from '@/components/sections/Footer'
+
+function AppContent() {
+  useLanguageDirection()
+  useDocumentMeta()
+
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Certifications />
+        <Services />
+        <WhyWorkWithMe />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
+  )
+}
+
+export default App
